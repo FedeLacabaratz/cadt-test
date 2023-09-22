@@ -1,0 +1,111 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontSize": 10,
+  "workbench.startupEditor": "newUntitledFile",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "debug.node.autoAttach": "off",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "liveServer.settings.donotVerifyTags": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "explorer.compactFolders": false,
+  "bracket-pair-colorizer-2.colors": [
+    "#fafafa",
+    "#9F51B6",
+    "#F7C244",
+    "#F07850",
+    "#9CDD29",
+    "#C497D4"
+  ],
+  "css.remoteStyleSheets": [
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  ],
+  "workbench.colorTheme": "Monokai Night",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.confirmSync": false,
+  "team.showFarewellMessage": false,
+  "team.showWelcomeMessage": false,
+  "sonarlint.connectedMode.connections.sonarcloud": [],
+  "sonarlint.ls.javaHome": "c:\\Users\\flacabaratz\\.vscode\\extensions\\sonarsource.sonarlint_managed-jre\\jre\\jdk-11.0.9+11-jre",
+  "sonarlint.analyzerProperties": {},
+  "sonarlint.connectedMode.connections.sonarqube": [
+    {
+      "serverUrl": "https://baccsonarqube.applus.solutions/",
+      "token": "e0c136471d7e7408bfe1baae9ef6c6e7dff5db90"
+    }
+  ],
+  "sonarlint.output.showAnalyzerLogs": true,
+  "sonarlint.connectedMode.project": {
+    "projectKey": "my_project"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "emmet.extensionsPath": [""],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "gitlens.codeLens.authors.command": null,
+  "gitlens.menus": {
+    "editorGroup": false,
+    "editorTab": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "explorer": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": true
+    },
+    "scm": {
+      "authors": true
+    },
+    "scmGroupInline": {
+      "stash": true
+    },
+    "scmGroup": {
+      "compare": true,
+      "openClose": true,
+      "stash": true
+    },
+    "scmItem": {
+      "clipboard": true,
+      "compare": true,
+      "history": true,
+      "remote": false,
+      "stash": true
+    }
+  },
+  "editor.codeActionsOnSave": null,
+  "editor.quickSuggestions": null,
+  "prettier.trailingComma": "none",
+  "prettier.semi": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "workbench.editor.enablePreview": false,
+  "tailwindCSS.experimental.configFile": null,
+  "terminal.integrated.autoReplies": {},
+  "terminal.integrated.automationProfile.windows": {},
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "window.zoomLevel": -0.5,
+  "html.format.contentUnformatted": ""
+}

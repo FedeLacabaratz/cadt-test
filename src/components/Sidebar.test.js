@@ -1,21 +1,17 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import Sidebar from './Sidebar';
 import { MemoryRouter } from 'react-router-dom';
-import App from './App';
 
-describe('App Component', () => {
-    it('should render App component with Sidebar', () => {
+describe('Sidebar Component', () => {
+    it('should render Sidebar component', () => {
         render(
             <MemoryRouter>
-                <App />
+                <Sidebar />
             </MemoryRouter>
         );
 
         // Component is rendering correctly
-        const appElement = screen.getByTestId('app');
-        expect(appElement).toBeInTheDocument();
-
-        // Verifies existance of Sidebar component within App component
         const sidebarElement = screen.getByTestId('sidebar');
         expect(sidebarElement).toBeInTheDocument();
     });

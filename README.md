@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# CADT test App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows you to navigate between two tables (Designs and Setouts), being the first category "Designs", the one selected to have a button that allows the user to edit any row by clicking the pencil avatar button. This button will open a modal popup which contains all visible fields within the row. Whenever we click the "Save" button, this new info will be reflected in the row. On the other hand if we decide to click the "Cancel" button, the row will remain as it was.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+1. Run `npm install` to install the dependencies.
+2. Run `npm run rundevel` this will start the App in the port 3000 and the json-server in the port 5000.
 
-### `yarn start`
+## Application Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application is structured as follows:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `src/components/App.jsx`: The main component that contains everything within.
+- `src/components/Sidebar.jsx`: The secondary component that handles the selection of each view.
+- `src/components/Designs.jsx`: The view that will allow us to interact with edition through the edit button.
+- `src/components/Setouts.jsx`: The other view that is much more simple, a readonly table.
+- `src/components/Table.jsx`: The reusable component that will work for both views independently of the usage.
+- `src/components/ModalTable.jsx`: The requested modal that will open up for us when clicking the edit button.
+- `src/helpers/fetchData.js`: This contains both functions used to simulate load and update from json-server of our data.
+- `src/helpers/initialsGenerator.js`: A function that generates initials to be used as mockup inside our special "By" column.
+- `db.json`: A file containing the provided mock data structure that will be read from json-server.
+- `src/styles`: In here we will store our reset file that resets our browser inconsistencies like default line, heights, etc. Then we will have a style.scss file which contains the mainContainer css styles, all the rest is basically treated within each component due to the simplicity of the code. If it was a more complex structure the we should have a more complex structure of subfolders in here. We use Sass to ease up the css synthaxis when styling the web page. 
 
-### `yarn test`
+Now that is it! You now have a mini application that allows you to switch between two tables/categories in which one of them, ("Designs"), also allows edition by opening a modal with a submittable form inside.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or need further assistance, please let me know by contacting through email to: lacarq@gmail.com
